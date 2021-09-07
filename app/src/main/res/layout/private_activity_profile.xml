@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_signin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/basic_backg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/btnMyInvitations"
+            android:layout_width="264sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame"
+            android:backgroundTint="#63988d"
+            android:ems="10"
+            android:focusable="false"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:minWidth="264sp"
+            android:minHeight="64sp"
+            android:text="My Invitations"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintVertical_bias="0.060000002" />
+
+        <EditText
+            android:id="@+id/btnSearchAreas"
+            android:layout_width="264sp"
+            android:layout_height="64sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/frame1"
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="false"
+            android:freezesText="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="none"
+            android:text="Search Areas"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMyInvitations"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/btnLogOut"
+            android:layout_width="264sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame"
+            android:backgroundTint="#63988d"
+            android:ems="10"
+            android:focusable="false"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:minWidth="264sp"
+            android:minHeight="64sp"
+            android:text="Log out"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSearchAreas"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="264dp"
+            android:layout_height="103dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16000003">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="264dp"
+                android:layout_height="103dp"
+                app:tint="@color/white"
+                android:src="@drawable/frame"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvClientName"
+                android:layout_width="167dp"
+                android:layout_height="27dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#4A7E76"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/imageView6"
+                app:layout_constraintVertical_bias="0.23000002" />
+
+            <TextView
+                android:id="@+id/tvClientPhone"
+                android:layout_width="165dp"
+                android:layout_height="27dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#4A7E76"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvClientName"
+                app:layout_constraintVertical_bias="0.24000001" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="165px"
+        android:layout_height="165px"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/final_icon" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Capsuleup"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

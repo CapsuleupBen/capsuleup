@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Area located in the north side of Jamaica. Built at 1927. Open - Sunday, Monday, Saturday, 12:00 to 17:00. Must see."
+        android:inputType="textMultiLine"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.client">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/final_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/final_icon"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Client">
+        <activity android:name=".business_register"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".private_createAccount"
+            android:label="Create Account"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".private_profile" />
+        <activity
+            android:name=".private_myInvitations"
+            android:label="Booked"
+            android:parentActivityName=".private_profile" />
+        <activity
+            android:name=".private_searchArea"
+            android:label="Search"
+            android:parentActivityName=".private_profile"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".private_areasList"
+            android:label="Results"
+            android:launchMode="singleTop"
+            android:parentActivityName=".private_searchArea" />
+        <activity
+            android:name=".private_area_profile"
+            android:label="Area"
+            android:parentActivityName=".private_areasList" />
+        <activity
+            android:name=".private_capsulesList"
+            android:label="Sub-Areas"
+            android:launchMode="singleTop"
+            android:parentActivityName=".private_area_profile" />
+        <activity
+            android:name=".private_invitationsList"
+            android:label="Invitations"
+            android:launchMode="singleTop"
+            android:parentActivityName=".private_capsulesList" />
+        <activity
+            android:name=".private_bookInvitation"
+            android:label="Book invitation"
+            android:parentActivityName=".private_invitationsList" />
+        <activity
+            android:name=".lostConnection"
+            android:label="Connection Lost"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".business_area_profile"
+            android:label="Area profile"
+            android:parentActivityName=".business_myAreas" />
+        <activity
+            android:name=".business_addInvitation"
+            android:label="Add invitation"
+            android:parentActivityName=".business_myInvitations"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".business_addCapsule"
+            android:label="Create sub-area"
+            android:parentActivityName=".business_myCapsules"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".business_addArea"
+            android:label="Create area"
+            android:parentActivityName=".business_myAreas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".business_myInvitations"
+            android:label="Invitations"
+            android:parentActivityName=".business_myCapsules" />
+        <activity
+            android:name=".business_myCapsules"
+            android:label="Sub-Areas"
+            android:launchMode="singleTop"
+            android:parentActivityName=".business_area_profile" />
+        <activity
+            android:name=".business_myAreas"
+            android:label="Areas"
+            android:launchMode="singleTop"
+            android:parentActivityName=".business_profile" />
+        <activity
+            android:name=".business_profile"
+            android:label="Profile" />
+        <activity
+            android:name=".business_createAccount"
+            android:label="Create account"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".scanner_Scan"
+            android:label="Scan"
+            android:parentActivityName=".scanner_myAreas" />
+        <activity android:name=".scanner_profile" />
+        <activity
+            android:name=".scanner_myAreas"
+            android:label="Areas"
+            android:parentActivityName=".scanner_profile" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

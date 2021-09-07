@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CapsuleUp</string>
+
+    <string-array name="planets_array">
+        <item>Private</item>
+        <item>Business</item>
+        <item>Scanner</item>
+    </string-array>
+
+</resources>
