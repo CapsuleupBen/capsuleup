@@ -1,4 +1,4 @@
-# client1
+# CapsuleUp
 Hello, 
 Im 18 years old Student and this is my First application.
 This is a Queue managment application that connects to a Server that i built.
